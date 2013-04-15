@@ -3,11 +3,7 @@ module SitePrism::PageContainer
   def page(page_name, klass = nil)
     build_getter(page_name, klass)
   end
-
-  def realm(realm_name, klass = nil)
-    build_getter(realm_name, klass)
-  end
-
+  alias :realm :page
 
   private
 
